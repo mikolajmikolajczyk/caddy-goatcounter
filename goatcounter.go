@@ -146,7 +146,7 @@ func (gc *GoatCounter) trackRequest(r *http.Request) {
 
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("User-Agent", gc.UserAgent)
-	req.Header.Set("Host", gc.Site)
+	req.Host = gc.Site
 
 	if gc.Token != "" {
 		req.Header.Set("Authorization", "Bearer "+gc.Token)

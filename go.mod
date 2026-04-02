@@ -1,4 +1,4 @@
-module github.com/jarv/caddy-goatcounter
+module github.com/mikolajmikolajczyk/caddy-goatcounter
 
 go 1.25.0
 
